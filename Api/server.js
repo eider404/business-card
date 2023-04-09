@@ -12,13 +12,14 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const dbOptions = {
-  host: "localhost",
-  port: 3307,
-  user: "root",
-  password: "",
-  database: "Usuarios",
-  //ssl: {},
+  host: "aws.connect.psdb.cloud",
+  //port: 3307,
+  user: "fsdxksuwx0ml9xw5ex7d",
+  password: "pscale_pw_N4bI88UoRqN7z4exrlXdzt36SXl0AfFbk0uAcuhYYi6",
+  database: "usuarios",
+  ssl: {}
 };
+
 
 app.use("/", express.static("public"));
 app.use(cors());

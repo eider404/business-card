@@ -13,11 +13,7 @@ routes.get("/obtener", (req, res) => {
       res.json(rows);
     });
   });
-});//dsdfdsf
-dfsdf
-
-FileSystemDirectoryEntryd
-f
+});
 
 //Insertar
 routes.post("/nuevo", (req, res) => {
