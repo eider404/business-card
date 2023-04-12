@@ -19,6 +19,10 @@ routes.get("/obtener", (req, res) => {
 
 //Insertar
 routes.post("/nuevo", (req, res) => {
+  
+  if(!(req.body.nombre && req.body.adress && req.body.phone && req.body.email && req.body.website && req.body.logo && req.body.facebooklink && req.body.twitterlink && req.body.instagramlink && req.body.linkedinlink && req.body.youtubelink)){
+    return res.status(401).json({status: 401, mensaje: "Campos obligarorios"})
+}
   req.getConnection((err, conn) => {
     if (err) return res.send(err);
     //console.log(req.body)
@@ -30,6 +34,9 @@ routes.post("/nuevo", (req, res) => {
     });
   });
 });
+
+
+
 
 //Actualizar
 routes.put("/actualizar/:id", (req, res) => {
@@ -65,7 +72,7 @@ routes.delete("/eliminar/:id", (req, res) => {
 });
 
 //Buscar id por url
-//http://localhost:3000/api/id-buscar?id=1
+//https://tarjeta.fly.dev/users/?id=4
 routes.get("/", (req, res) => {
   const requestquery = req.query;
   //console.log(query);

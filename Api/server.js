@@ -12,12 +12,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const dbOptions = {
-  host: "aws.connect.psdb.cloud",
-  //port: 3307,
-  user: "ae1xb2ksb22as9ggpbex",
-  password: "pscale_pw_rr3mZJ7KP4db6QdZAPbmYwhTwk3BO1avI52c5Ag9jy2",
-  database: "usuarios",
-  ssl: {}
+  host: "bchntymcsbf3ttq32bzo-mysql.services.clever-cloud.com",
+  port: 3306,
+  user: "uwidlgbbkhzmiopd",
+  password: "ezZuJ8AWSmN6Ue8AXMDt",
+  database: "bchntymcsbf3ttq32bzo",
+  //ssl: {}
 };
 
 app.use("/", express.static("public"));
