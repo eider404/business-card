@@ -86,6 +86,14 @@ routes.get("/", (req, res) => {
       } catch (error) {
           return res.status(401).json({status: 401, mensaje: "La id no existe"})
       }
+
+      /*
+        if (err) {
+          return res.send(err);
+        }
+        res.json(rows);
+        //res.json(requestquery);
+      */
       });
   });
 });
