@@ -3,23 +3,22 @@ const mysql = require("mysql");
 var cors = require("cors");
 const myconn = require("express-myconnection");
 
-//express.static(root, [options]);
-//Para poder subir los cambios en fly.io es necesario poner fly deploy
+//flyctl launch para subir la app en fly.io
+//Para poder subir los cambios en fly.io es necesario poner fly deploy o flyctl deploy
 const routes = require("./rutas");
 const app = express();
 
-/*app.set("port", process.env.Port || 3000);*/
+
 const PORT = process.env.PORT || 3000;
 
 const dbOptions = {
   host: "aws.connect.psdb.cloud",
   //port: 3307,
-  user: "fsdxksuwx0ml9xw5ex7d",
-  password: "pscale_pw_N4bI88UoRqN7z4exrlXdzt36SXl0AfFbk0uAcuhYYi6",
+  user: "ae1xb2ksb22as9ggpbex",
+  password: "pscale_pw_rr3mZJ7KP4db6QdZAPbmYwhTwk3BO1avI52c5Ag9jy2",
   database: "usuarios",
   ssl: {}
 };
-
 
 app.use("/", express.static("public"));
 app.use(cors());
