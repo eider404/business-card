@@ -1,24 +1,36 @@
 .background-image {
-    background-image: url('../../assets/images/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .business-logo {
-    max-width: 50%;
-    /* Adjust the size of the logo as needed */
-  }
-  
+  background-image: url('../../assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.business-logo {
+  max-width: 50%;
+  /* Adjust the size of the logo as needed */
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 18/9;
+  width: 800px;
+  border: 2px solid rgba(0, 0, 0, .3);
+  box-shadow: 0 0 50px rgba(0, 0, 0, .7);
+}
+
+
+
   

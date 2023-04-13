@@ -47,6 +47,7 @@ export class CardComponent {
 
   //get con id
   ngOnInit(): void {
+    //obtenemos el id segun la ruta
     this.id = Number(this.route.snapshot.paramMap.get('id'));
     this.getBusinessInfo();
     

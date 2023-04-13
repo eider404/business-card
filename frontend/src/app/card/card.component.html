@@ -5,14 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
+  <script src="https://cdn.tailwindcss.com"></script>
   
   
 </head>
 <body>
-  <div class="background-image">
+  <div class="background-image font-medium text-slate-900">
     <!-- <app-business-info></app-business-info>pkexec /opt/lampp/manager-linux-x64.run   -->
-    <!-- <div class="card box" > -->
+    <div class="card box" >
+
+      <div>
+        
+      </div>
+
       <app-business-info [businessInfo]="businessInfo"></app-business-info>
       <app-qr-code></app-qr-code>
       <button *ngIf="showInstallPrompt" (click)="installPWA()" class="install-button">
@@ -22,8 +27,12 @@
       <div class="bg">
         
       </div>
-    <!-- </div> -->
+    </div>
     
+</div>
+
+<div>
+  
 </div>
 
 
