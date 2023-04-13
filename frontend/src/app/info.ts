@@ -47,8 +47,22 @@ export class BusinessCardInfo {
 
    
     // create static method called getBusinessCardInfo
-    static getBusinessCardInfo() {  
+    static getBusinessCardInfo(datosUser: any) { 
         // return a new instance of the BusinessCardInfo class
-        return new BusinessCardInfo('Tu Espacio MKT', 'domicilio conocido', '9993606511', 'presenciadigital03@gmail.com', 'www.jomatconsultores.com', '', 'https://www.facebook.com/tuespaciomktoriente/', 'Your Twitter Link', 'Your Instagram Link', 'Your Linkedin Link', 'Your Youtube Link');
+        const CardInfo = new BusinessCardInfo(
+            datosUser[0].nombre,
+            datosUser[0].adress,
+            datosUser[0].phone,
+            datosUser[0].email,
+            datosUser[0].website,
+            datosUser[0].logo,
+            datosUser[0].facebooklink,
+            datosUser[0].twitterlink,
+            datosUser[0].instagramLink,
+            datosUser[0].linkedinlink,
+            datosUser[0].youtubelink
+        );
+        return CardInfo
+        //data[0].nombre
     }
 }

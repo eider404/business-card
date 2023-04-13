@@ -1,6 +1,11 @@
-<div class="business-info">
-    <h2>{{ businessInfo?.businessName }}</h2>
-    <p>Phone: {{ businessInfo?.businessPhone }}</p>
-    <p>WhatsApp: {{ businessInfo?.businessPhone }}</p>
+<div *ngIf="businessInfo" class="business-info">
+    <h2>{{ businessInfo!.businessName }}</h2>
+    <p>Phone: {{ businessInfo!.businessPhone }}</p>
+    <p>WhatsApp: {{ businessInfo!.businessPhone }}</p>
     <app-social-media-bar [socialNetworkDetail]="businessInfo"></app-social-media-bar>
 </div>
+<div *ngIf="!businessInfo">
+    <p>no hay datos</p>
+</div>
+
+<!--  <h1>info</h1> -->

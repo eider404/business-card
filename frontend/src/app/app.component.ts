@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public showInstallPrompt: boolean = false;
+/*   public showInstallPrompt: boolean = false;
   private deferredPrompt: any;
 
   constructor() {
@@ -30,7 +30,7 @@ export class AppComponent {
         this.showInstallPrompt = false;
       });
     }
-  }
+  } */
 }
 
 

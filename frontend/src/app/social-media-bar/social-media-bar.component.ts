@@ -13,4 +13,8 @@ import { BusinessCardInfo } from '../info';
 export class SocialMediaBarComponent {
 //add the Input decorator to the property
   @Input() socialNetworkDetail: BusinessCardInfo | undefined;
+
+  openLink(url: string): void {
+    window.open(url, '_blank');
+  }
 }

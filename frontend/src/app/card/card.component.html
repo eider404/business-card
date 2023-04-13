@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  
+  
+</head>
+<body>
+  <div class="background-image">
+    <!-- <app-business-info></app-business-info>pkexec /opt/lampp/manager-linux-x64.run   -->
+    <!-- <div class="card box" > -->
+      <app-business-info [businessInfo]="businessInfo"></app-business-info>
+      <app-qr-code></app-qr-code>
+      <button *ngIf="showInstallPrompt" (click)="installPWA()" class="install-button">
+        Install App
+      </button>
+
+      <div class="bg">
+        
+      </div>
+    <!-- </div> -->
+    
+</div>
+
+
+</body>
+
+</html>

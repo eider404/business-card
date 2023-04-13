@@ -1,20 +1,26 @@
 import { Injectable } from '@angular/core';
 import { BusinessCardInfo } from './info';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl = 'https://your-backend-api-url.com/';
+  private apiUrl = 'http://localhost:3000/users/?id=';
+  datosUser : any;
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
 
-  async getBusinessInfo() {
+  async getBusinessInfo(id: number) {
     try {
-      // return business card info from model for now
-      return BusinessCardInfo.getBusinessCardInfo();
-     // const response = await axios.get(this.apiUrl + 'business-info');
-      //return response.data;
+      //get a la API
+      this.datosUser = await this.http.get(this.apiUrl+id).toPromise();
+      console.log("get", this.datosUser);
+
+      return BusinessCardInfo.getBusinessCardInfo(this.datosUser.rows);
+  
     } catch (error) {
       console.error(error);
     }
