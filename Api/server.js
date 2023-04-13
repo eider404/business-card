@@ -12,11 +12,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const dbOptions = {
-  host: "bchntymcsbf3ttq32bzo-mysql.services.clever-cloud.com",
+  host: "localhost",
   port: 3306,
-  user: "uwidlgbbkhzmiopd",
-  password: "ezZuJ8AWSmN6Ue8AXMDt",
-  database: "bchntymcsbf3ttq32bzo",
+  user: "root",
+  password: "",
+  database: "Usuarios",
   //ssl: {}
 };
 
