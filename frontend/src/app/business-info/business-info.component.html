@@ -1,24 +1,27 @@
 <div *ngIf="businessInfo" class="business-info">
-    
-    <div class="flex items-center space-x-4" style="padding: 20px;">
-        <img class="rounded-full w-14 h-14" src="{{ businessInfo!.businessLogo }}" alt="">
-        <div>
-            <div class="font-mono font-bold text-blue-800">Nombre:</div>
-            <div class="text-2xl font-bold text-slate-900" >{{ businessInfo!.businessName }}</div>
-            
-        </div>
-    </div >
+  <div class="flex items-center space-x-4" style="padding: 20px">
+    <img
+      class="rounded-full w-14 h-14"
+      src="{{ businessInfo!.businessLogo }}"
+      alt=""
+    />
+    <div>
+      <!-- <div class="nombre">Nombre:</div> -->
+      <div class="text-2xl font-bold text-slate-900 name">
+        {{ businessInfo!.businessName }}
+      </div>
+    </div>
+  </div>
 
-
-    <!-- <h2>{{ businessInfo!.businessName }}</h2> -->
-    <p>Phone: {{ businessInfo!.businessPhone }}</p>
-    <p>WhatsApp: {{ businessInfo!.businessPhone }}</p>
-    <app-social-media-bar [socialNetworkDetail]="businessInfo"></app-social-media-bar>
-
-    
+  <!-- <h2>{{ businessInfo!.businessName }}</h2> -->
+  <p class="informacion">Phone: {{ businessInfo!.businessPhone }}</p>
+  <p class="informacion">WhatsApp: {{ businessInfo!.businessPhone }}</p>
+  <app-social-media-bar
+    [socialNetworkDetail]="businessInfo"
+  ></app-social-media-bar>
 </div>
 <div *ngIf="!businessInfo">
-    <p>no hay datos</p>
+  <p class="name">no hay datos</p>
 </div>
 
 <!--  <h1>info</h1> -->
