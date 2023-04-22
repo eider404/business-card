@@ -1,59 +1,121 @@
-<form (ngSubmit)="onSubmit()">
-  <label>
-    Nombre:
-    <input type="text" name="nombre" [(ngModel)]="post.nombre">
-  </label>
-  <br>
-  <label>
-    Adress:
-    <input type="text"  name="adress" [(ngModel)]="post.adress">
-  </label>
-  <br>
-  <label>
-    Phone:
-    <input type="number" name="phone" [(ngModel)]="post.phone">
-  </label>
-  <br>
-  <label>
-    email:
-    <input type="text" name="email" [(ngModel)]="post.email">
-  </label>
-  <br>
-  <label>
-    website:
-    <input type="text" name="website" [(ngModel)]="post.website">
-  </label>
-  <br>
-  <label>
-    logo:
-    <input type="text" name="logo" [(ngModel)]="post.logo">
-  </label>
-  <br>
-  <label>
-    facebooklink:
-    <input type="text" name="facebooklink" [(ngModel)]="post.facebooklink">
-  </label>
-  <br>
-  <label>
-    twitterlink:
-    <input type="text" name="twitterlink" [(ngModel)]="post.twitterlink">
-  </label>
-  <br>
-  <label>
-    instagramlink:
-    <input type="text" name="instagramlink" [(ngModel)]="post.instagramlink">
-  </label>
-  <br>
-  <label>
-    linkedinlink:
-    <input type="text" name="linkedinlink" [(ngModel)]="post.linkedinlink">
-  </label>
-  <br>
-  <label>
-    youtubelink:
-    <input type="text" name="youtubelink" [(ngModel)]="post.youtubelink">
-  </label>
-  <br>
-  
-  <button type="submit">Submit</button>
-</form>
+<br />
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <div class="div"><h1>Nueva tarjeta</h1></div>
+    <br />
+    <div class="form-group">
+      <label class="label"> Nombre:</label>
+      <input
+        type="text"
+        name="nombre"
+        [(ngModel)]="post.nombre"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label class="label"> Adress: </label>
+      <input
+        type="text"
+        name="adress"
+        [(ngModel)]="post.adress"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label class="label"> Phone: </label>
+      <input
+        type="number"
+        name="phone"
+        [(ngModel)]="post.phone"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label class="label"> Email: </label>
+      <input
+        type="text"
+        name="email"
+        [(ngModel)]="post.email"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label class="label"> Website: </label>
+      <input
+        type="text"
+        name="website"
+        [(ngModel)]="post.website"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label class="label"> Logo: </label>
+      <input
+        type="text"
+        name="logo"
+        [(ngModel)]="post.logo"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label class="label"> Facebook: </label>
+      <input
+        type="text"
+        name="facebooklink"
+        [(ngModel)]="post.facebooklink"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label class="label"> Twitter: </label>
+      <input
+        type="text"
+        name="twitterlink"
+        [(ngModel)]="post.twitterlink"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label class="label"> Instagram: </label>
+      <input
+        type="text"
+        name="instagramlink"
+        [(ngModel)]="post.instagramlink"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label class="label"> Linkedin: </label>
+      <input
+        type="text"
+        name="linkedinlink"
+        [(ngModel)]="post.linkedinlink"
+        class="form-control"
+      />
+    </div>
+
+    <div class="form-group">
+      <label class="label"> Youtube: </label>
+      <input
+        type="text"
+        name="youtubelink"
+        [(ngModel)]="post.youtubelink"
+        class="form-control"
+      />
+    </div>
+
+    <button type="submit" class="btn">Agregar</button>
+  </form>
+</div>
+<br />
+<br />
+<br />

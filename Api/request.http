@@ -40,4 +40,4 @@ Content-Type: application/json
 
 //Eliminar
 ### 
-DELETE https://tarjeta.fly.dev/users/eliminar/4 HTTP/1.1
+DELETE https://tarjeta.fly.dev/users/eliminar/3 HTTP/1.1
