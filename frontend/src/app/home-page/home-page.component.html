@@ -1,0 +1,59 @@
+<form (ngSubmit)="onSubmit()">
+  <label>
+    Nombre:
+    <input type="text" name="nombre" [(ngModel)]="post.nombre">
+  </label>
+  <br>
+  <label>
+    Adress:
+    <input type="text"  name="adress" [(ngModel)]="post.adress">
+  </label>
+  <br>
+  <label>
+    Phone:
+    <input type="number" name="phone" [(ngModel)]="post.phone">
+  </label>
+  <br>
+  <label>
+    email:
+    <input type="text" name="email" [(ngModel)]="post.email">
+  </label>
+  <br>
+  <label>
+    website:
+    <input type="text" name="website" [(ngModel)]="post.website">
+  </label>
+  <br>
+  <label>
+    logo:
+    <input type="text" name="logo" [(ngModel)]="post.logo">
+  </label>
+  <br>
+  <label>
+    facebooklink:
+    <input type="text" name="facebooklink" [(ngModel)]="post.facebooklink">
+  </label>
+  <br>
+  <label>
+    twitterlink:
+    <input type="text" name="twitterlink" [(ngModel)]="post.twitterlink">
+  </label>
+  <br>
+  <label>
+    instagramlink:
+    <input type="text" name="instagramlink" [(ngModel)]="post.instagramlink">
+  </label>
+  <br>
+  <label>
+    linkedinlink:
+    <input type="text" name="linkedinlink" [(ngModel)]="post.linkedinlink">
+  </label>
+  <br>
+  <label>
+    youtubelink:
+    <input type="text" name="youtubelink" [(ngModel)]="post.youtubelink">
+  </label>
+  <br>
+  
+  <button type="submit">Submit</button>
+</form>

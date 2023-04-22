@@ -6,6 +6,7 @@ import { QRCodeModule } from 'angularx-qrcode';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -13,6 +14,7 @@ import { BusinessInfoComponent } from './business-info/business-info.component';
 import { QrCodeComponent } from './qr-code/qr-code.component';
 import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.component';
 import { CardComponent } from './card/card.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { CardComponent } from './card/card.component';
     QrCodeComponent,
     SocialMediaBarComponent,
     CardComponent,
+    HomePageComponent,
   
     
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     QRCodeModule,
     CarouselModule,
