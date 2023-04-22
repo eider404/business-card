@@ -1,10 +1,11 @@
 # Integrantes :
 
-###Eider Moises Pool Arjona
-###Edilson Yair Hernandez Pech
+### Eider Moises Pool Arjona
 
-##Link:
+### Edilson Yair Hernandez Pech
+
+## Link:
 
 #### https://tarjetautp.netlify.app/
 
-##Resultado
+## Resultado
