@@ -1,16 +1,16 @@
-.body {
-  background: #bdc3c7; /* fallback for old browsers */
+/* .body {
+  background: #bdc3c7; 
   background: -webkit-linear-gradient(
     to right,
     #2c3e50,
     #bdc3c7
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(to right, #2c3e50, #bdc3c7);
   display: flex;
   align-items: center;
-  justify-content: center; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-/*.background-image {
+  justify-content: center; 
+} */
+.background-image {
   background-image: url('../../assets/images/background.jpg');
   background-size: cover;
   background-position: center;
@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}*/
+}
 
 .logo-container {
   display: flex;
@@ -61,29 +61,21 @@
   position: absolute;
   left: -8px;
   top: -8px;
-  background: linear-gradient(
-    120deg,
-    #2e4053,
-    #48c9b0,
-    #cb4335,
-    #9b59b6,
-    #f4d03f,
-    #33ccff
-  );
-  background-size: 300%;
+  background: linear-gradient(300deg,#116863, #102444, #671D67);
+  background-size: 180% 180%;
   width: calc(100% + 16px);
   height: calc(100% + 16px);
   z-index: -1;
-  animation: BGgradient 15s ease infinite;
+  animation: gradient-animation 15s ease infinite;
 }
-@keyframes BGgradient {
+@keyframes gradient-animation {
   0% {
-    background-position: 0% 200%;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 200% 0%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 330%;
+    background-position: 0% 50%;
   }
 }
