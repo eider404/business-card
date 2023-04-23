@@ -11,7 +11,7 @@
   justify-content: center; 
 } */
 .background-image {
-  background-image: url('../../assets/images/background.jpg');
+  background-image: url('../../assets/images/fondo.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,8 +40,9 @@
   aspect-ratio: 18/9;
   width: 800px;
   border: 2px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.7);
   border-radius: 15px;
+  background: linear-gradient(300deg,#116863, #0e578a);
 }
 .card:hover {
   transform: scale(1.1);
@@ -51,7 +52,7 @@
   width: 70px;
   height: 40px;
   border-radius: 2px;
-  background-color: darkorange;
+  background-color: #116863;
 }
 
 .animate-bg::before,
@@ -61,12 +62,13 @@
   position: absolute;
   left: -8px;
   top: -8px;
-  background: linear-gradient(300deg,#116863, #102444, #671D67);
+  background: linear-gradient(300deg,#116863, #102444, #0e578a);
+  /* background: linear-gradient(300deg,#116863, #102444, #0e578a); */
   background-size: 180% 180%;
   width: calc(100% + 16px);
   height: calc(100% + 16px);
   z-index: -1;
-  animation: gradient-animation 15s ease infinite;
+  animation: gradient-animation 10s ease infinite;
 }
 @keyframes gradient-animation {
   0% {
